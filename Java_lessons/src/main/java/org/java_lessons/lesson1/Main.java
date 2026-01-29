@@ -14,10 +14,10 @@ public class Main {
 
         var number = 1234;
         //+ - * / %
-        var result_sum = byteVar + intVar;
-        var result_minus = byteVar - intVar;
-        var result_multiply = byteVar * intVar;
-        var result_split = byteVar / intVar;
+        var resultSum = byteVar + intVar;
+        var resultMinus = byteVar - intVar;
+        var resultMultiply = byteVar * intVar;
+        var resultSplit = byteVar / intVar;
 
         var result1 = floatVar + byteVar;
 
@@ -29,11 +29,11 @@ public class Main {
         // char
         char d = 'a';
 
-        System.out.println("сумма "+result_sum);
-        System.out.println("разница "+result_minus);
-        System.out.println("произвдение "+result_multiply);
-        System.out.println("целочисленное деление "+result_split);
+        System.out.println("сумма "+resultSum);
+        System.out.println("разница "+resultMinus);
+        System.out.println("произвдение "+resultMultiply);
+        System.out.println("целочисленное деление "+resultSplit);
         System.out.println("Ярослав - друг, товарищ и брат!");
-        System.out.println("Ярослав - друг, товарищ и брат вечно!");
+
     }
 }
