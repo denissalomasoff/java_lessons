@@ -34,5 +34,6 @@ public class Main {
         System.out.println("произвдение "+result_multiply);
         System.out.println("целочисленное деление "+result_split);
         System.out.println("Ярослав - друг, товарищ и брат!");
+        System.out.println("Ярослав - друг, товарищ и брат вечно!");
     }
 }
