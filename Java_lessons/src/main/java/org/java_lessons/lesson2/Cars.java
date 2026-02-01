@@ -27,17 +27,16 @@ public class Cars {
             selectedCar = car5;
         } else {
             System.out.println("Ошибка ввода. Доступны номера от 1 до 5");
-            sc.close();
             return;
         }
 
-            System.out.println(selectedCar.brand);
-            System.out.println(selectedCar.engine);
-            System.out.println(selectedCar.capacity);
-            System.out.println(selectedCar.color);
-            System.out.println(selectedCar.price);
-           // sc.close();
-        }
+        System.out.println(selectedCar.brand);
+        System.out.println(selectedCar.engine);
+        System.out.println(selectedCar.capacity);
+        System.out.println(selectedCar.color);
+        System.out.println(selectedCar.price);
+        sc.close();
     }
+}
 
 

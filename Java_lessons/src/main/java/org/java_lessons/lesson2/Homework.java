@@ -12,13 +12,12 @@ public class Homework {
         //number четное;
         boolean res3 = number % 2 == 0;
         //number кратное 3, но не кратное 9;
-        boolean res4 = (number % 3 == 0)&&(number % 9 != 0);
+        boolean res4 = (number % 3 == 0) && (number % 9 != 0);
         //number кратное 5 и 7;
-        boolean res5 = (number % 5 == 0)&&(number % 7 == 0);
+        boolean res5 = (number % 5 == 0) && (number % 7 == 0);
         int age = 18;
         //Вывести взрослый или нет
         boolean isAdult = age >= 18;
-
 
 
         System.out.println("number в диапазоне [100, 1000] : " + res);
