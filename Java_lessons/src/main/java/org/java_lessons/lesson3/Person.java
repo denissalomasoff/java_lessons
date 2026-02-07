@@ -9,7 +9,8 @@ public class Person {
     private int age;
 
     // конструктор без параметров
-    public Person() {}
+    public Person() {
+    }
 
     // конструктор с параметрами firstName и lastName
     public Person(String firstName, String lastName) {
@@ -44,5 +45,19 @@ public class Person {
         this.firstName = firstName;
     }
 
-    // Повторить для остальных полей по аналогии, кроме static
+    public String getLastName() {
+        return lastName;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
 }

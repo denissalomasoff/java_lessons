@@ -15,12 +15,16 @@ public class User {
     //    }
 
     // Есть только возможность генерировать Getters
-    // по скольку поля присвоят значения при создании объетка через контруктор
+    // по скольку поля присвоят значения при создании объекта через конcтруктор
     public String getFirstName() {
         return firstName;
     }
 
     public String getLastName() {
         return lastName;
+    }
+
+    public String getPassword() {
+        return "***";
     }
 }

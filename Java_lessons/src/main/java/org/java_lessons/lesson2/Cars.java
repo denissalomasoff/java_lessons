@@ -10,7 +10,7 @@ public class Cars {
         Auto car4 = new Auto("Lexus", "Petrol", 205, "White", 21400);
         Auto car5 = new Auto("Uaz", "Petrol");
 
-        Scanner sc = new Scanner(System.in);
+        Scanner sc = new Scanner(`System.in)`;
         System.out.println("Введите номер автомобиля от 1 до 5:");
         int choice = sc.nextInt();
         Auto selectedCar;
