@@ -2,7 +2,7 @@
 package ru.lessons.lesson3;
 
 // реализация методов контракта интерфейса
-public class CalculatorImpl implements Calculator {
+public class CalculatorImpl implements ru.lessons.lesson3.Calculator {
     // @Override переопределение методов интерфейса
     // обязательное
     @Override

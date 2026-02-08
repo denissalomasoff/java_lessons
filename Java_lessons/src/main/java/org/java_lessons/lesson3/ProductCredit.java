@@ -64,5 +64,4 @@ public class ProductCredit {
         this.rate = rate;
     }
 
-
 }

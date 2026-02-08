@@ -1,6 +1,9 @@
 
 package ru.lessons.lesson3;
 
+import org.java_lessons.lesson3.Person;
+import org.java_lessons.lesson3.User;
+
 public class Main {
     public static void main(String[] args) {
         final var person = new Person();
@@ -28,14 +31,14 @@ public class Main {
         final int number = 100;
 //        number = 1;
 
-        final User user = new User("Петя", "Петров", "12345");
+        final User user = new User("Петя", "Петров");
         //System.out.println(user.getFirstName() + " " + user.getLastName() + " " + user.getPassword());
 
-        Calculator calculator = new CalculatorImpl();
+        ru.lessons.lesson3.Calculator calculator = new ru.lessons.lesson3.CalculatorImpl();
         calculator.print();
         System.out.println(calculator.subtract(100, 10));
 
-        Calculator jewishCalc = new JewishCalculatorImpl();
+        ru.lessons.lesson3.Calculator jewishCalc = new ru.lessons.lesson3.JewishCalculatorImpl();
         jewishCalc.print();
         System.out.println(jewishCalc.subtract(100, 10));
 
