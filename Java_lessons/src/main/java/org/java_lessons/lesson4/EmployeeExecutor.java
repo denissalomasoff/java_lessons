@@ -37,11 +37,10 @@ public class EmployeeExecutor {
             return;
         }
 
-        System.out.println("ЗП: " +specialist.getSalary() + " рябчиков");
-        System.out.println("В работе: " +specialist.getTask());
-        System.out.println("Имя трудяги " +specialist.getName());
-        //selectedCar.moving();
-        //selectedCar.loading();
+        System.out.println("ЗП: " + specialist.getSalary() + " рябчиков");
+        System.out.println("В работе: " + specialist.getTask());
+        System.out.println("Имя трудяги " + specialist.getName());
+        specialist.doTask();
         sc.close();
 
     }

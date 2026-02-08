@@ -1,5 +1,15 @@
 package org.java_lessons.lesson4;
 
+//2. Создать абстрактный класс Student с полями:
+//a) String name;
+//b) String subject;
+//c) int course;
+//d) double averageGrade;
+//2.1. создать для всех полей Getters and Setters;
+//2.2. Создать конструктор без и со всеми параметрами;
+//2.3. Реализовать классы (студент физического факультета StudentPhysicsFaculty, StudentChemistryFaculty, StudentMathFaculty, StudentHistoryFaculty) наследующие абстрактный класс Student;
+//2.4. В классе StudentExecutor создать все 4 вида студентов и вывести все данные о них;
+
 public abstract class Student {
    public String name;
    public String subject;

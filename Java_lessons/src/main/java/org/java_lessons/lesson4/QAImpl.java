@@ -41,7 +41,8 @@ public class QAImpl implements Employee1 {
     }
 
     @Override
-    public void doTask(String taskName) {
+    public void doTask() {
+        System.out.println("Следующая задача - Подготовка к ПСИ");
 
     }
 }

@@ -26,6 +26,11 @@ public class BAImpl implements Employee1 {
     }
 
     @Override
+    public void doTask() {
+        System.out.println("Следующая задача - Делать вид, что очень занят");
+    }
+
+    @Override
     public void setTask(String task) {
         this.task = task;
     }
@@ -39,8 +44,4 @@ public class BAImpl implements Employee1 {
         this.salary = salary;
     }
 
-    @Override
-    public void doTask(String taskName) {
-
-    }
 }

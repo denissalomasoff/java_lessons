@@ -40,8 +40,8 @@ public class DevImpl implements Employee1 {
     }
 
     @Override
-    public void doTask(String taskName) {
-
+    public void doTask() {
+        System.out.println("Следующая задача - Исправление падающих тестов");
     }
 }
 
