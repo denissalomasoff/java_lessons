@@ -68,12 +68,12 @@ public class Computer {
     public boolean equals(Object o) {
         if (o == null || getClass() != o.getClass()) return false;
         Computer computer = (Computer) o;
-        return id == computer.id && ram == computer.ram && power == computer.power && Objects.equals(cpu, computer.cpu) && Objects.equals(videoCard, computer.videoCard);
+        return ram == computer.ram && power == computer.power && Objects.equals(cpu, computer.cpu) && Objects.equals(videoCard, computer.videoCard);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, cpu, ram, videoCard, power);
+        return Objects.hash(cpu, ram, videoCard, power);
     }
 
     @Override
