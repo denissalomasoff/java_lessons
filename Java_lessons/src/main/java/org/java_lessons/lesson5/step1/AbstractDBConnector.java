@@ -1,5 +1,7 @@
 package org.java_lessons.lesson5.step1;
 
+import com.sun.jdi.connect.Connector;
+
 public abstract class AbstractDBConnector implements org.java_lessons.lesson5.step1.DBConnector {
     private String username;
     private String password;
@@ -29,5 +31,10 @@ public abstract class AbstractDBConnector implements org.java_lessons.lesson5.st
     @Override
     public void disconnect() {
         System.out.println(String.format(DISCONNECT, this.host, this.port, this.database));
+    }
+
+    @Override
+    public void availability() {System.out.println("DB is available");
+
     }
 }

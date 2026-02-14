@@ -1,5 +1,6 @@
 package org.java_lessons.lesson5.step1;
 
+import org.java_lessons.lesson5.step1.impl.CassandraDBConnectorImpl;
 import org.java_lessons.lesson5.step1.impl.MongoDBConnectorImpl;
 import org.java_lessons.lesson5.step1.impl.MySQLConnectorImpl;
 import org.java_lessons.lesson5.step1.impl.PostgresqlConnectorImpl;
@@ -24,22 +25,37 @@ public class DBRunner {
                 9000,
                 "db212");
 
+        DBConnector cassandra = new CassandraDBConnectorImpl("user4",
+                "3014381",
+                "localhost",
+                7000,
+                "db007");
+
         DBConnector connector;
 
         System.out.println("Connecting to database Postgresql");
         connector = porstgresql;
         connector.connect();
         connector.disconnect();
+        connector.availability();
 
         System.out.println("Connecting to database MySQL");
         connector = mysql;
         connector.connect();
         connector.disconnect();
+        connector.availability();
 
         System.out.println("Connecting to database MongoDB");
         connector = mongo;
         connector.connect();
         connector.disconnect();
+        connector.availability();
+
+        System.out.println("Connecting to database CassandraDB");
+        connector = cassandra;
+        connector.connect();
+        connector.disconnect();
+        connector.availability();
 
     }
 }
