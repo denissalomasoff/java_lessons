@@ -6,7 +6,7 @@ public class PrinterExplorer {
         Printer Cannon = new CannonBlackPrinterImpl("Cannon HV700", "Black");
         Printer Xerox = new XeroxColorPrinterImpl("Xerox ImbaFAST", "Color");
 
-        Printer printerInfo;
+        Printer printerInfo; // Необходимо указать типом - созданный интерфейс (Printer).
 
         System.out.println("Принтер HP");
         printerInfo = HP;
