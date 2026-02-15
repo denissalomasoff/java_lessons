@@ -11,18 +11,21 @@ public class PrinterExplorer {
         System.out.println("Принтер HP");
         printerInfo = HP;
         printerInfo.getPrinterModel();
+        printerInfo.getPrinterType();
         printerInfo.print();
         printerInfo.clear();
 
         System.out.println("Принтер Cannon");
         printerInfo = Cannon;
         printerInfo.getPrinterModel();
+        printerInfo.getPrinterType();
         printerInfo.print();
         printerInfo.clear();
 
         System.out.println("Принтер Xerox");
         printerInfo = Xerox;
         printerInfo.getPrinterModel();
+        printerInfo.getPrinterType();
         printerInfo.print();
         printerInfo.clear();
 

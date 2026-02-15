@@ -4,4 +4,5 @@ public interface Printer {
     void print();
     void clear();
     void getPrinterModel();
+    void getPrinterType();
 }

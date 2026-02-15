@@ -12,6 +12,10 @@ public abstract class AbstractPrinter implements Printer{
     @Override
     public void getPrinterModel() {
         System.out.println("Модель принтера: "+printerModel);
+    }
+
+    @Override
+    public void getPrinterType() {
         System.out.println("Тип принтера: "+printerType);
     }
 
