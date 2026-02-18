@@ -4,10 +4,10 @@ import java.time.LocalDate;
 
 public class WhichSeason {
     public static void main(String[] args) {
-        LocalDate date = LocalDate.now();
-        String convertDate = date.toString();
-        char char1 = convertDate.charAt(5);
-        char char2 = convertDate.charAt(6);
+        final LocalDate date = LocalDate.now();
+        final String convertDate = date.toString();
+        final char char1 = convertDate.charAt(5);
+        final char char2 = convertDate.charAt(6);
         //Season = Season.FALL;
 
         System.out.println(convertDate);

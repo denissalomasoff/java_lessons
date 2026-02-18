@@ -7,8 +7,8 @@ import static org.java_lessons.lesson6.Season.*;
 
 public class BestWhichSeason {
     public static void main(String[] args) {
-        LocalDate date = LocalDate.now();
-        Month month = date.getMonth();
+        final LocalDate date = LocalDate.now();
+        final Month month = date.getMonth();
 
         if ((month == month.DECEMBER) || (month == month.JANUARY) || (month == month.FEBRUARY)) {
             System.out.println("Текущая дата: " + date);

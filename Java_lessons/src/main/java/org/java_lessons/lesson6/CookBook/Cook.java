@@ -19,7 +19,6 @@ public class Cook {
         }
         if (component instanceof Turkey Turkey) {
             Turkey.turCooking();
-            ;
         }
     }
 

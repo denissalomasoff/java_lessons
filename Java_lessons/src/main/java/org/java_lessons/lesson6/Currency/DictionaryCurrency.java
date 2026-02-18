@@ -4,14 +4,14 @@ import static org.java_lessons.lesson6.Currency.CurrencyType.*;
 
 public class DictionaryCurrency {
     public static void main(String[] args) {
-        CurrencyType curRub = CurrencyType.RUB;
-        CurrencyType curEur = CurrencyType.EUR;
-        CurrencyType curDol = CurrencyType.USD;
-        CurrencyType curDir = CurrencyType.AED;
-        CurrencyType curUan = CurrencyType.CNY;
+        final CurrencyType curRub = CurrencyType.RUB;
+        final CurrencyType curEur = CurrencyType.EUR;
+        final CurrencyType curDol = CurrencyType.USD;
+        final CurrencyType curDir = CurrencyType.AED;
+        final CurrencyType curUan = CurrencyType.CNY;
 
         System.out.println("Справочник валют");
-        System.out.println("Наименование- " + "международный код- " + "Коэффициент");
+        System.out.println("Наименование - " + "международный код - " + "Коэффициент");
         System.out.println(String.format("%s - %d - %f",
                 RUB.getRussianName(),
                 RUB.getUnionCode(),
