@@ -11,7 +11,7 @@ public class WhichSeason {
         //Season = Season.FALL;
 
         System.out.println(convertDate);
-        System.out.println(char1 + " "+ char2);
+        System.out.println(char1 + " " + char2);
 
         if ((char1 == 0) && (char2 == 1)) {
             System.out.println("Текущая дата: " + date);
