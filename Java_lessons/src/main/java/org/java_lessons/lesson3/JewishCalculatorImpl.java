@@ -2,7 +2,7 @@
 package ru.lessons.lesson3;
 
 
-public class JewishCalculatorImpl implements Calculator {
+public class JewishCalculatorImpl implements ru.lessons.lesson3.Calculator {
     @Override
     public int add(int a, int b) {
         return (a + b) * 100;
