@@ -8,10 +8,15 @@ public class StringCipherExecutor {
         System.out.println("Введите сначала строку, а затем смещение (offset)");
         // создается экземпляр класса StringCipher, для обращения к классу и возможности вызова метода этого класса
         final StringCipher stringCipher = new StringCipher();
-        // переменной result присваивается значение, полученное из метода decode,
+        // переменной resultDecode присваивается значение, полученное из метода decode,
         // который принимает входящую строку и значени из Сканнера
-        final String resultDecode = stringCipher.decode(scanner.nextLine(), scanner.nextInt());
+        final String inputString = scanner.nextLine();
+        System.out.println("Введите offset");
+        final Integer offset = scanner.nextInt();
+        scanner.nextLine();
+        final String resultDecode = stringCipher.decode(inputString, offset);
         System.out.println("Результат шифрования строки: " + resultDecode);
         scanner.close();
     }
 }
+
