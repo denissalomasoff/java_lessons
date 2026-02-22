@@ -4,7 +4,7 @@ public class StringCipher {
     String decode(String str, Integer offset) {
         if ((str == null) || str.isEmpty() || (offset == null)) {
             System.out.println("Строка или смещение не введены");
-            return "";
+            return null;
         }
         final String inputString = str.trim().replaceAll("[\\s\\-_]", "");
         final char[] charInputString = inputString.toCharArray();
