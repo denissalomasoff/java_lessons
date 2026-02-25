@@ -7,7 +7,7 @@ public class StringCipher {
             return "";
         }
         final char[] charInputString = str.toCharArray();
-        // цикл проходит по всем элементам массива и увеличивает на величину "offset"
+        // цикл проходит по всем элементам массива и увеличивает каждый на величину "offset"
         for (int i = 0; i < charInputString.length; i++) {
             charInputString[i] = (char) (offset + charInputString[i]);
         }

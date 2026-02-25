@@ -1,0 +1,5 @@
+1. Циклы - счетчики;
+2. Поиск max, min, avg, сумма;
+3. Character знакомство;
+4. StringBuilder, StringBuffer;
+5. Палиндром проверка;
