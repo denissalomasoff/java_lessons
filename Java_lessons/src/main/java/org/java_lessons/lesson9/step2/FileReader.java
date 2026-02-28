@@ -6,6 +6,8 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 
 public class FileReader {
+    //метод чтения текстового файла, создает объект Path из строкового пути к файлу, читает и возвращает текст из файла с кодировкой UTF-8
+    // в случае ошибки выбраcывает exception
     public String readFile(String path) throws IOException {
         return Files.readString(Path.of(path), StandardCharsets.UTF_8);
     }
