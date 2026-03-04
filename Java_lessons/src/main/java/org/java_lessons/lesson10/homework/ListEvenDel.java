@@ -17,6 +17,6 @@ public class ListEvenDel {
                 numberList.remove(i);
             }
         }
-        System.out.println("Список из нечетный элементов: " + numberList);
+        System.out.println("Список из нечетных элементов: " + numberList);
     }
 }

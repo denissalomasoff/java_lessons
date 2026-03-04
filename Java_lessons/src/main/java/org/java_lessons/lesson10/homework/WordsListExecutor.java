@@ -19,12 +19,10 @@ public class WordsListExecutor {
             System.out.println("Слова эквивалентны.");
         } else if (word1.length() != word2.length()) {
             System.out.println("Слова имеют разную длину.");
-        } else if (AnargammCheck.Anagram(word1, word2)) {
+        } else if (AnargammCheck.anagram(word1, word2)) {
             System.out.println("Слова - анаграммы.");
         } else {
             System.out.println("Слова имеют одинаковую длину, но не являются анаграммами.");
         }
     }
-
-    //scanner.close();
 }
