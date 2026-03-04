@@ -11,7 +11,6 @@ public class ProfilePage {
         PageFactory.initElements(driver, this);
         this.driver = driver; }
 
-    //@FindBy(xpath = "//span[contains(@class, 'd-icon_cross-big') and contains(@class, 'local-icon-theme-black')]")
     @FindBy(xpath = "/html/body/div[5]/div[2]/div/div/header/button")
     private WebElement closeAdYndxMusic;
 
