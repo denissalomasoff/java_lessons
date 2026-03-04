@@ -22,9 +22,8 @@ public class Agregate {
         double max = Collections.max(numberList);
         double avg = sum / numberList.size();
 
-        System.out.println("--- С использованием Collections ---");
         System.out.println("Сумма: " + sum);
-        System.out.println("Среднее: " + avg);
+        System.out.println("Среднее арифметическое: " + avg);
         System.out.println("Минимум: " + min);
         System.out.println("Максимум: " + max);
     }
