@@ -4,12 +4,15 @@ import org.junit.AfterClass;
 import org.junit.Assert;
 import org.junit.BeforeClass;
 import org.junit.Test;
+import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 import java.time.Duration;
 import java.util.Set;
+
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
@@ -32,12 +35,17 @@ public class TestYandexMusic {
     @Test
     public void loginTestYM() throws InterruptedException {
 
-        profilePage.clickCloseAdYndxMusic();
+        //profilePage.clickCloseAdYndxMusic(); Выключил клик по кнопке, добавил метод, который сначала ждет, потом жмет на кнопку;
+
+        WebDriverWait wait1 = new WebDriverWait(driver, Duration.ofSeconds(10));
+        WebElement button = wait1.until(
+                ExpectedConditions.elementToBeClickable(By.xpath("//*[@id=\"_R_cd5vdbh95uivb_\"]/div/header/button"))
+        );
+        button.click();
         profilePage.clickLoginBtnYndxMusic();
 
-        //WebDriverWait wait = new WebDriverWait(driver, 10);
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-        wait.until(ExpectedConditions.numberOfWindowsToBe(2));
+        wait.until(ExpectedConditions.numberOfWindowsToBe(1));//исправил с 2 на 1 (ошибка показывала, что 1 элемент)
 
         String mainWindowHandle = driver.getWindowHandle();
         Set<String> allWindowHandles = driver.getWindowHandles();

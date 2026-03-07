@@ -11,10 +11,10 @@ public class ProfilePage {
         PageFactory.initElements(driver, this);
         this.driver = driver; }
 
-    @FindBy(xpath = "/html/body/div[5]/div[2]/div/div/header/button")
+    @FindBy(xpath = "//*[@id=\"_R_cd5vdbh95uivb_\"]/div/header/button")
     private WebElement closeAdYndxMusic;
 
-    @FindBy(xpath = "//span[@class='button__label' and contains(text(), 'Войти')]")
+    @FindBy(xpath = "/html/body/div[3]/div/div/div[1]/main/div[1]/div/div[2]/div[2]/button[2]")
     private WebElement loginBtnYndxMusic;
 
     @FindBy(css = "div.user__userpic-avatar")

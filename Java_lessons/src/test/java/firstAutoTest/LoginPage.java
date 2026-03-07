@@ -14,9 +14,9 @@ public class LoginPage {
         this.driver = driver; }
 
 
-    @FindBy(xpath = "//*[contains(@id, 'passp-field-login')]")
+    @FindBy(xpath = "//*[@id=\"react-aria-«Rm6b»\"]")
     private WebElement loginField;
-    @FindBy(xpath = "//button[@id='passp:sign-in']")
+    @FindBy(xpath = "//*[@id=\"app\"]/div[2]/div/form/div[2]/div[2]/button")
     private WebElement loginBtn;
     @FindBy(xpath = "//button[@id='passp:sign-in' and span[contains(text(), 'Продолжить')]]")
     private WebElement loginCnt;
