@@ -21,7 +21,7 @@ public class CcpMain {
         final CorporateProductCredit credit8 = new CorporateProductCredit(UUID.randomUUID(), 1L, 4L, true, generateRandomDate());
         final CorporateProductCredit credit9 = new CorporateProductCredit(UUID.randomUUID(), 3L, 5L, false, LocalDate.of(2004, 3, 1));
         final CorporateProductCredit credit10 = new CorporateProductCredit(UUID.randomUUID(), 3L, 5L, false, LocalDate.of(2004, 3, 1));
-        // Создается множество, состоящее из 10 кредитов, хэшсет автоматически удаляет дубликаты, кроме id;
+        // Создается множество credits, состоящее из 10 кредитов, хэшсет автоматически удаляет дубликаты, кроме id;
         final var credits = new HashSet<>(List.of(credit1, credit2, credit3, credit4, credit5, credit6, credit7, credit8, credit9, credit10));
         //Создаем список из множества без дубликатов. Необходим для последующей сортировки;
         List<CorporateProductCredit> sortCredits = new ArrayList<>(credits);
