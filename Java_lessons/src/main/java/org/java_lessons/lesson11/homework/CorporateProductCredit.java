@@ -15,6 +15,5 @@ public class CorporateProductCredit {
     private Long statusId;
     private Long typeId;
     private boolean active;
-    private LocalDate effectiveTime;
     private LocalDate expirationTime;
 }
