@@ -42,6 +42,8 @@ public class CcpMain {
         LocalDate endDate = LocalDate.now();
 
         long daysBetween = ChronoUnit.DAYS.between(startDate, endDate);
+        // ThreadLocalRandom.current() — генератор случайных чисел;
+        // nextLong(daysBetween + 1) генерирует случайное целое число (тип long) в диапазоне от 0 включительно до daysBetween + 1
         long randomDays = ThreadLocalRandom.current().nextLong(daysBetween + 1);
 
         return startDate.plusDays(randomDays);
