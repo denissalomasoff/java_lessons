@@ -9,15 +9,19 @@ import org.openqa.selenium.interactions.Actions;
 public class LoginPage {
 
     public WebDriver driver;
+
     public LoginPage(WebDriver driver) {
         PageFactory.initElements(driver, this);
-        this.driver = driver; }
+        this.driver = driver;
+    }
 
 
     @FindBy(xpath = "//*[@id=\"react-aria-«Rm6b»\"]")
     private WebElement loginField;
     @FindBy(xpath = "//*[@id=\"app\"]/div[2]/div/form/div[2]/div[2]/button")
     private WebElement loginBtn;
+    @FindBy(xpath = "//*[@id=\"react-aria-«R19a6b»\"]")
+    private WebElement chooseWay;
     @FindBy(xpath = "//button[@id='passp:sign-in' and span[contains(text(), 'Продолжить')]]")
     private WebElement loginCnt;
     @FindBy(xpath = "//*[contains(@id, 'passp-field-passwd')]")
@@ -31,11 +35,18 @@ public class LoginPage {
     }
 
     public void clickLoginBtn() {
-        loginBtn.click(); }
+        loginBtn.click();
+    }
+
+    public void clickChooseWay() {
+        chooseWay.click();
+    }
 
     public void inputPasswd(String passwd) {
-        passwdField.sendKeys(passwd); }
+        passwdField.sendKeys(passwd);
+    }
 
     public void clickLoginCnt() {
-        loginCnt.click(); }
+        loginCnt.click();
+    }
 }
