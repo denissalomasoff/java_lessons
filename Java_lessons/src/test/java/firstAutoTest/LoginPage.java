@@ -22,6 +22,8 @@ public class LoginPage {
     private WebElement loginBtn;
     @FindBy(xpath = "//*[@id=\"react-aria-«R19a6b»\"]")
     private WebElement chooseWay;
+    @FindBy(xpath = "/html/body/div[3]/div[2]/div[3]/div/div/div/div/div/div/span")
+    private WebElement switchToLogin;
     @FindBy(xpath = "//button[@id='passp:sign-in' and span[contains(text(), 'Продолжить')]]")
     private WebElement loginCnt;
     @FindBy(xpath = "//*[contains(@id, 'passp-field-passwd')]")
@@ -40,6 +42,10 @@ public class LoginPage {
 
     public void clickChooseWay() {
         chooseWay.click();
+    }
+
+    public void clickSwitchToLogin() {
+        switchToLogin.click();
     }
 
     public void inputPasswd(String passwd) {

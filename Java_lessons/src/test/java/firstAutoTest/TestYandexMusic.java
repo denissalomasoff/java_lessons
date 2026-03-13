@@ -57,6 +57,7 @@ public class TestYandexMusic {
         }
 
         loginPage.clickChooseWay();
+        loginPage.clickSwitchToLogin();
         loginPage.inputLogin(ConfProperties.getProperty("login"));
         loginPage.clickLoginBtn();
         loginPage.inputPasswd(ConfProperties.getProperty("password"));
