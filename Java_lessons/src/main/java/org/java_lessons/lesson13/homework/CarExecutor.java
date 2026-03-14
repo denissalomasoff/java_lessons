@@ -73,6 +73,56 @@ public class CarExecutor {
             }
         }
         System.out.println("1.4. Авто старше 2020 года с увеличением цены :\n" + changePriceOldCars);
-    }
 
+        // Перебрать список, найти первое авто с ценой < 150000 руб, если нет выбросить CarNotFoundException(“Авто с ценой < 150000 не обнаружено”);
+        try {
+            //Преобразуем список в стрим, который позволяет обрабатывать элементы списка по одному;
+            Car cheapCar = rusPriceCars.stream()
+                    //c - это каждый автомобиль из списка (сокращение от car);
+                    //-> - лямбда-выражение Пропускает дальше только те автомобили, которые удовлетворяют условию, стальные отсеиваются;
+                    .filter(c -> c.getPrice() < 150000.0)
+                    //Берет первый элемент из отфильтрованного стрима;
+                    .findFirst()
+                    .orElseThrow(() -> new CarNotFoundException("Авто с ценой < 150000 не обнаружено."));
+
+            System.out.println("Авто дешевле 150000 руб:\n" + cheapCar);
+
+        } catch (CarNotFoundException ex) {
+            System.out.println(ex.getMessage());
+        }
+
+       //Через any-all-non-match проверить условие цена > 2000000 и 1 владелец и год выпуска > 2016;
+        boolean hasExpensiveCar = rusPriceCars.stream()
+                .anyMatch(car -> car.getPrice() > 2000000
+                        && car.getOwners() == 1
+                        && car.getYearRelease() > 2016);
+
+        if (hasExpensiveCar) {
+            System.out.println("Найден хотя бы один автомобиль с ценой > 2 млн руб, 1 владельцем и годом выпуска > 2016");
+        } else {
+            System.out.println("Нет ни одного автомобиля, удовлетворяющего условию: цена > 2 млн руб, 1 владелец, год выпуска > 2016");
+        }
+
+        boolean allCarsExpensive = rusPriceCars.stream()
+                .allMatch(car -> car.getPrice() > 2000000
+                        && car.getOwners() == 1
+                        && car.getYearRelease() > 2016);
+
+        if (allCarsExpensive) {
+            System.out.println("ВСЕ автомобили дороже 2 млн руб, имеют 1 владельца и год выпуска позже 2016");
+        } else {
+            System.out.println("НЕ все автомобили удовлетворяют условию: дороже 2 млн руб, 1 владелец и год выпуска позже 2016");
+        }
+
+        boolean noExpensiveCars = rusPriceCars.stream()
+                .noneMatch(car -> car.getPrice() > 2000000
+                        && car.getOwners() == 1
+                        && car.getYearRelease() > 2016);
+
+        if (noExpensiveCars) {
+            System.out.println("Нет ни одного автомобиля с ценой > 2 млн руб, 1 владельцем и годом выпуска позже 2016");
+        } else {
+            System.out.println("Есть автомобили, удовлетворяющие условию: цена более 2 млн руб, 1 владелец и год выпуска позже 2016");
+        }
+    }
 }
