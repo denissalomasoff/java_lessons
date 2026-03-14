@@ -91,7 +91,7 @@ public class CarExecutor {
             System.out.println(ex.getMessage());
         }
 
-       //Через any-all-non-match проверить условие цена > 2000000 и 1 владелец и год выпуска > 2016;
+        //Через any-all-non-match проверить условие цена > 2000000 и 1 владелец и год выпуска > 2016;
         boolean hasExpensiveCar = rusPriceCars.stream()
                 .anyMatch(car -> car.getPrice() > 2000000
                         && car.getOwners() == 1
