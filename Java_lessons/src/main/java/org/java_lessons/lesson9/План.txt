@@ -1,0 +1,4 @@
+1. Иерархия ошибок, custom exception;
+2. Checked и Unchecked Exception при чтении файла;
+3. ArithmeticException;
+4. Кастомные ошибки, NPE;
